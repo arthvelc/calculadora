@@ -1,0 +1,24 @@
+# Ignorar archivos y directorios generados por el entorno de desarrollo
+/node_modules
+/.env
+
+# Ignorar archivos de compilación y construcción
+/dist
+/build
+
+# Ignorar archivos de dependencias específicas del lenguaje
+*.log
+*.lock
+*.swp
+
+# Ignorar archivos de respaldo y temporales
+*.bak
+*.tmp
+
+# Ignorar archivos de configuración local
+/.vscode
+/.idea
+
+# Ignorar archivos de caché y datos generados
+/.cache
+/.DS_Store
