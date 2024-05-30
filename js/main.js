@@ -1,4 +1,10 @@
-
+/*
+************************************
+------------------------------------
+            VARIABLES
+------------------------------------
+************************************
+ */
 const btn = document.querySelectorAll('.btn-light')
 const btnEqual = document.querySelector('#btn-equal')
 const btnDelete = document.querySelector('#btn-del')
@@ -8,6 +14,15 @@ let display = document.getElementById('input');
 let resultDisplay = document.getElementById('results');
 let currentInput = '';
 let previousResult = '';
+
+/*
+************************************
+------------------------------------
+            FUNCIONES
+------------------------------------
+************************************
+
+*/
 
 function updateDisplay(value){
     display.textContent = value;//textContend es una propiedad que permite cambiar el texto de un elemento
@@ -41,6 +56,14 @@ function handleDelete(){
     currentInput === '' ? updateDisplay('0'): updateDisplay(currentInput)
 
 }
+
+/*
+************************************
+------------------------------------
+            EVENTOS 
+------------------------------------
+************************************
+*/
 
 btn.forEach((button) =>{
     button.addEventListener('click', ()=>{
